@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.test.facedetection.ui.activities.main.MainViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:defaultNavHost="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:navGraph="@navigation/activity_main" />
+
+<!--        <com.google.android.material.appbar.AppBarLayout-->
+<!--            android:id="@+id/app_bar_layout"-->
+<!--            style="@style/AppBarLayoutStyle"-->
+<!--            android:background="@color/transparent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/toolbar"-->
+<!--                style="@style/ToolbarStyle"-->
+
+<!--                >-->
+
+<!--            </androidx.appcompat.widget.Toolbar>-->
+
+<!--        </com.google.android.material.appbar.AppBarLayout>-->
+
+<!--        <View-->
+<!--            android:id="@+id/view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_marginTop="@dimen/dp_14"-->
+<!--            app:layout_constraintTop_toTopOf="@id/v_bottom_navigation"/>-->
+
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:id="@+id/v_bottom_navigation"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="74dp"-->
+<!--            android:background="@drawable/shape_top_cornered"-->
+<!--            android:animateLayoutChanges="true"-->
+<!--            android:paddingStart="@dimen/dp_12"-->
+<!--            android:paddingEnd="@dimen/dp_12"-->
+<!--            app:itemIconTint="@drawable/selector_bottom_navigation"-->
+<!--            app:itemTextColor="@drawable/selector_bottom_navigation"-->
+<!--            app:labelVisibilityMode="labeled"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:menu="@menu/menu_main_bottom_navigation" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
